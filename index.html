@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon-person"
+      type="svg"
+      sizes="32x32"
+      href="./images/icon-dollar.svg"
+    />
+
+    <link
+      rel="icon-person"
+      type="svg"
+      sizes="32x32"
+      href="./images/icon-person.svg"
+    />
+
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <section class="tip-cal">
+      <h1>SPLI<br />TTER</h1>
+      <div class="tip-select">
+        <div class="bill-section">
+          <label for="bill">
+            Bill<br />
+            <span class="bill-box">
+              $
+              <input
+                name="bill"
+                id="bill"
+                type="number"
+                min="0.01"
+                step="0.01"
+                required
+              />
+            </span>
+          </label>
+        </div>
+        <!-- Bill input section closure -->
+
+        <div class="tip-section">
+          Select Tip %
+          <div class="percent five">5%</div>
+          <div class="percent ten">10%</div>
+          <div class="percent fifteen">15%</div>
+          <div class="percent twenty-five">25%</div>
+          <div class="percent fifty">50%</div>
+          <div class="percent custom-input">
+            <label for="custom-tip">
+              <input
+                name="custom-tip"
+                id="custom-tip"
+                type="number"
+                placeholder="Custom"
+              />
+            </label>
+          </div>
+        </div>
+        <!-- Tip selection closure -->
+
+        <div class="nop-section">
+          <label for="nop">
+            Number of People<br />
+            <span class="nop-box">
+              <input name="nop" id="nop" type="number" min="1" required />
+            </span>
+          </label>
+        </div>
+        <!-- Number of People closure -->
+      </div>
+      Tip Amount /person Total / person Reset
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="http://www.patrice-jean.com" target="_blank">Patrice Jean</a>.
+      </div>
+    </section>
+  </body>
+</html>
